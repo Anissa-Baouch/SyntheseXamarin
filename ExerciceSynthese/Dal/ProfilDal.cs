@@ -20,7 +20,7 @@ namespace ExerciceSynthese.Dal
 			return _dbb.Table<Profil>().Where(x => x.Id == id).FirstOrDefault();
 		}
 
-		public void Sauvegarder(Profil profil)
+        public void Sauvegarder(Profil profil)
 		{
 			if (profil.Id != 0)
 				_dbb.Update(profil);

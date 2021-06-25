@@ -3,5 +3,32 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="ExerciceSynthese.MainPage">
 
-
+    <StackLayout>
+        <StackLayout Orientation="Horizontal" BackgroundColor="Black">
+            <Label TextColor="White" FontSize="Medium" BackgroundColor="#444444" HorizontalTextAlignment="Start" x:Name="lblDate"/>
+            <ImageButton x:Name="btnAccount" Source="account.png" BackgroundColor="Transparent" Clicked="btnAccount_Clicked"></ImageButton>
+            <ImageButton x:Name="btnAdd" Source="plus.png" BackgroundColor="Transparent"  Clicked="btnAdd_Clicked"></ImageButton>
+        </StackLayout>
+        <StackLayout>
+            <ListView x:Name="lstTaches" HasUnevenRows="True" Grid.Row="1" ItemTapped="lstTaches_ItemTapped">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <Frame HasShadow="True" BorderColor="Gray" Margin="0,10,0,0" BackgroundColor="White">
+                                <Grid>
+                                    <Grid.RowDefinitions>
+                                        <RowDefinition Height="Auto"/>
+                                        <RowDefinition Height="Auto"/>
+                                    </Grid.RowDefinitions>
+                                    <Label Text="{Binding Label}" Grid.Row="0"/>
+                                    <Label Text="{Binding Description}" Grid.Row="1"/>
+                                    <Switch IsToggled="True" Grid.Column="1" Toggled="Switch_Toggled"/>
+                                </Grid>
+                            </Frame>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+        </StackLayout>
+    </StackLayout>
 </ContentPage>

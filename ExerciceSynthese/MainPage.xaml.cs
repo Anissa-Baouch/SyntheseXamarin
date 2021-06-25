@@ -15,6 +15,30 @@ namespace ExerciceSynthese
 		public MainPage()
 		{
 			InitializeComponent();
+			lblDate.Text = DateTime.Today.ToShortDateString();
+			List<Tache> taches = new List<Tache>();
+			taches = new TacheDal().SelectAll();
+			lstTaches.ItemsSource = taches;
 		}
-	}
+
+		private void btnAdd_Clicked(object sender, EventArgs e)
+		{
+			Navigation.PushModalAsync(new AddTache());
+		}
+
+        private void btnAccount_Clicked(object sender, EventArgs e)
+        {
+			Navigation.PushModalAsync(new Account());
+		}
+
+        private void lstTaches_ItemTapped(object sender, ItemTappedEventArgs e)
+        {
+
+        }
+
+        private void Switch_Toggled(object sender, ToggledEventArgs e)
+        {
+
+        }
+    }
 }

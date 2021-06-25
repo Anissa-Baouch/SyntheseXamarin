@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ExerciceSynthese.AddTache">
+    <ContentPage.Content>
+        <StackLayout>
+            <ImageButton x:Name="btnRetour" Source="retour.png" BackgroundColor="black" Clicked="btnRetour_Clicked"></ImageButton>
+            <ImageButton x:Name="btnValid" Source="valider.png" BackgroundColor="black" Clicked="btnValid_Clicked" ></ImageButton>
+
+            <Entry Placeholder="Nom" x:Name="entNom"/>
+            <DatePicker x:Name="dtpDate"/>
+            <Editor Placeholder="Description" HeightRequest="100" x:Name="edtDescription"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
