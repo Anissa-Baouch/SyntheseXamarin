@@ -27,3 +27,4 @@ C:\Users\TPCDA\Documents\TPCDA\Xamarin\SyntheseXamarin\ExerciceSynthese\obj\Debu
 C:\Users\TPCDA\Documents\TPCDA\Xamarin\SyntheseXamarin\ExerciceSynthese\obj\Debug\netstandard2.0\ExerciceSynthese.dll
 C:\Users\TPCDA\Documents\TPCDA\Xamarin\SyntheseXamarin\ExerciceSynthese\obj\Debug\netstandard2.0\ref\ExerciceSynthese.dll
 C:\Users\TPCDA\Documents\TPCDA\Xamarin\SyntheseXamarin\ExerciceSynthese\obj\Debug\netstandard2.0\ExerciceSynthese.pdb
+C:\Users\TPCDA\Documents\TPCDA\Xamarin\SyntheseXamarin\ExerciceSynthese\obj\Debug\netstandard2.0\ExerciceSynthese.csproj.AssemblyReference.cache

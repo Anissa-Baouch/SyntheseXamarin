@@ -31,11 +31,11 @@ namespace ExerciceSynthese
 
         private void btnValid_Clicked(object sender, EventArgs e)
         {
-            if (profilGeneral != null)
+            if (profilGeneral == null)
                 profilGeneral = new Profil();
             profilGeneral.Nom = entNom.Text;
             profilGeneral.Prenom = entPrenom.Text;
-            profilGeneral.Age = Convert.ToInt32(entAge);
+            profilGeneral.Age = Convert.ToInt32(entAge.Text);
             new ProfilDal().Sauvegarder(profilGeneral);
         }
 
